@@ -1,10 +1,10 @@
 import "./Entrepreneurship.css";
 
-function Entrpreneurship() {
+function Entrepreneurship() {
   return (
     <>
-      <div className="entrpreneurship">Entrpreneurship</div>
+      <div className="entrepreneurship">Entrepreneurship</div>
     </>
   );
 }
-export default Entrpreneurship;
+export default Entrepreneurship;

@@ -12,7 +12,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink to="/" className="nav-logo">
-            CodeBucks
+            Blogger
             <i className="fas fa-code"></i>
           </NavLink>
 

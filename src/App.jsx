@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./components/Home/Home";
 import Startups from "./components/Startups/Startups";
-import Entrpreneurship from "./components/Entrpreneurship/Entrepreneurship";
+import Entrepreneurship from "./components/Entrpreneurship/Entrepreneurship";
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -11,13 +12,14 @@ function App() {
     <Router>
       <div className="app">
         <Navbar />
-        <Sidebar />
+        {/* <Sidebar /> */}
 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/startups" element={<Startups />} />
-          <Route path="/entrepreneurship" element={<Entrpreneurship />} />
+          <Route path="/entrepreneurship" element={<Entrepreneurship />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
