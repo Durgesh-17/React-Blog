@@ -1,0 +1,28 @@
+.blogdetails{
+    background-color: #0d2527;
+    margin: 0;
+    padding: 10vh 15vw;
+}
+.article{
+    padding: 20px 40px;
+    border-radius: 25px;
+    background-color: #1f5156;
+}
+.article h1{
+    color: #f5b921;
+}
+.article p{
+    color: white;
+}
+.blog-header{
+    border-bottom: 1px solid grey;
+}
+.blog-header span{
+    font-style: italic;
+}
+.content{
+    color: aliceblue;
+    padding-top: 10px;
+    white-space: pre-wrap;
+       
+}

@@ -1,10 +1,7 @@
 import "./Startups.css";
+import Home from "../Home/Home";
 
 function Startups() {
-  return (
-    <>
-      <div className="startups">Startups</div>
-    </>
-  );
+  return <></>;
 }
 export default Startups;

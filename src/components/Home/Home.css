@@ -8,7 +8,13 @@
     padding: 10px 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
+.link:hover .link{
+    transform: translateY(-2px);
+    transition: 0.25s ease;
+}
+
 .all-blogs{
     width:70%;
 }
@@ -39,8 +45,6 @@
     overflow: hidden;
 }
 .tags-updates{
-    /* top:0; */
-    /* margin: auto; */
     padding: 10px 25px;
     width: 30%;
 }
