@@ -10,9 +10,14 @@
     margin-bottom: 20px;
     
 }
-.link:hover .link{
-    transform: translateY(-2px);
-    transition: 0.25s ease;
+
+.link{
+    transition: transform 0.25s ease-out;
+    display: inline-block;
+}
+.link:hover{
+    transform: translate(0,-2px);
+    
 }
 
 .all-blogs{
@@ -74,7 +79,7 @@
     background-color: #1f5156;
 }
 .updates ul{
-    color: #aaa5a5;
+    color: #c3c3c3;
 }
 
 .tag{
@@ -113,5 +118,8 @@
 @media screen and (max-width: 630px) {
     .preview-text{
         display: none;
+    }
+    .link{
+        width: 100%;
     }
   }

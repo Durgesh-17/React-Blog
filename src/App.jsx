@@ -1,9 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./components/Home/Home";
-import Startups from "./components/Startups/Startups";
-import Entrepreneurship from "./components/Entrpreneurship/Entrepreneurship";
 import Blogdetails from "./components/Blogdetails/Blogdetails";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";

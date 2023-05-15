@@ -47,16 +47,6 @@ function Navbar() {
                 Entrepreneurship
               </NavLink>
             </li>
-            {/* <li className="nav-item">
-              <NavLink
-                to="/"
-                activeclassname="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Contact Us
-              </NavLink>
-            </li> */}
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>

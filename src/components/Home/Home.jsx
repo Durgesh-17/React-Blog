@@ -108,6 +108,10 @@ function Home(props) {
             <h4>Recent updates</h4>
             <ul>
               <li>Lorem, ipsum dolor. Lorem, ipsum.</li>
+              <li>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
+                expedita.
+              </li>
               <li>Lorem, ipsum dolor. Lorem, ipsum.</li>
               <li>Lorem, ipsum dolor.</li>
               <li>Lorem, ipsum dolor. Lorem, ipsum.</li>
