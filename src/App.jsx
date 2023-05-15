@@ -116,12 +116,17 @@ function App() {
           />
           <Route
             path="/startups"
-            element={<Home articles={startup_articles} data={articles} />}
+            element={
+              <Home articles={startup_articles} data={startup_articles} />
+            }
           />
           <Route
             path="/entrepreneurship"
             element={
-              <Home articles={entrepreneurship_articles} data={articles} />
+              <Home
+                articles={entrepreneurship_articles}
+                data={entrepreneurship_articles}
+              />
             }
           />
           <Route

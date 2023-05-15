@@ -31,7 +31,9 @@ function Home(props) {
   let tagslist = [];
   data.forEach((item, index) => {
     item.tags.map((c) => {
-      tagslist.push(c);
+      if (!tagslist.includes(c)) {
+        tagslist.push(c);
+      }
     });
   });
 
