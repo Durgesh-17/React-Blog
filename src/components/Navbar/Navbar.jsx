@@ -11,7 +11,7 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="nav-container">
-          <NavLink to="/" className="nav-logo">
+          <NavLink to="/React-Blog" className="nav-logo">
             Blogger
             <i className="far fa-edit"></i>
           </NavLink>
@@ -19,7 +19,7 @@ function Navbar() {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
-                to="/"
+                to="/React-Blog/"
                 activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -29,7 +29,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/startups"
+                to="/React-Blog/startups"
                 activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -39,7 +39,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/entrepreneurship"
+                to="/React-Blog/entrepreneurship"
                 activeclassname="active"
                 className="nav-links"
                 onClick={handleClick}

@@ -44,7 +44,7 @@ function Home(props) {
           {articleslist.map((article, index) => {
             return (
               <Link
-                to={`/blog/${article.id}`}
+                to={`/React-Blog/blog/${article.id}`}
                 style={{
                   textDecoration: "none",
                 }}

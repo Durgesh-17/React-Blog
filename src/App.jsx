@@ -108,17 +108,17 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
+            path="/React-Blog"
             element={<Home articles={articles} data={articles} />}
           />
           <Route
-            path="/startups"
+            path="/React-Blog/startups"
             element={
               <Home articles={startup_articles} data={startup_articles} />
             }
           />
           <Route
-            path="/entrepreneurship"
+            path="/React-Blog/entrepreneurship"
             element={
               <Home
                 articles={entrepreneurship_articles}
@@ -127,7 +127,7 @@ function App() {
             }
           />
           <Route
-            path="/blog/:id"
+            path="/React-Blog/blog/:id"
             element={<Blogdetails articles={articles} />}
           />
         </Routes>
