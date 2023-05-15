@@ -53,17 +53,19 @@
     color: #f5b921;
 }
 .tags{
-    height: 35vh;
+    /* height: 35vh; */
     /* border: 1px solid green; */
     border-radius: 10px;
     background-color: #1f5156;
     margin-bottom: 10px;
     
 }
-.tag{
-    border: 1px solid #f5b921;
-    border-radius: 10px;
+.tag-button{
+    color: #f5b921;
+    background-color: transparent;
+    border-radius: 7px;
 }
+
 .updates{
     height: 50vh;
     /* border: 1px solid green; */
@@ -75,10 +77,9 @@
 }
 
 .tag{
-    width: 90px;
-    height: 30px;
-    border-radius: 10px;
-    margin: 10px 5px;
+    display: inline-block;
+    margin: 3px;
+    padding: 2px;
 }
 .btn-outline-primary{
     padding: 2px;
@@ -95,6 +96,7 @@
   }
   .tags-updates{
     width: 100%;
+    padding: 10px 0px;
   }
   .tags{
     height: auto;

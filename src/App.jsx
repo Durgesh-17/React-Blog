@@ -8,6 +8,7 @@ import Blogdetails from "./components/Blogdetails/Blogdetails";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function App() {
   const articles = [
@@ -109,14 +110,19 @@ function App() {
         {/* <Sidebar /> */}
 
         <Routes>
-          <Route path="/" element={<Home articles={articles} />} />
+          <Route
+            path="/"
+            element={<Home articles={articles} data={articles} />}
+          />
           <Route
             path="/startups"
-            element={<Home articles={startup_articles} />}
+            element={<Home articles={startup_articles} data={articles} />}
           />
           <Route
             path="/entrepreneurship"
-            element={<Home articles={entrepreneurship_articles} />}
+            element={
+              <Home articles={entrepreneurship_articles} data={articles} />
+            }
           />
           <Route
             path="/blog/:id"

@@ -1,14 +1,45 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "./Home.css";
 
 function Home(props) {
-  const articles = props.articles;
+  const articles_home = props.articles;
+  const data = props.data;
+  //   console.log(articles_home);
+
+  const [articleslist, setArticleslist] = useState([]);
+
+  useEffect(() => {
+    setArticleslist(articles_home);
+  }, [articles_home]);
+
+  //   console.log(articleslist);
+
+  const filtering = (t) => {
+    let rslt = [];
+    data.forEach((e) => {
+      let value = e.tags.find((d) => {
+        return d === t;
+      });
+      if (value) {
+        return rslt.push(e);
+      }
+    });
+    return setArticleslist(rslt);
+  };
+
+  let tagslist = [];
+  data.forEach((item, index) => {
+    item.tags.map((c) => {
+      tagslist.push(c);
+    });
+  });
 
   return (
     <>
       <div className="home">
         <div className="all-blogs">
-          {props.articles.map((article, index) => {
+          {articleslist.map((article, index) => {
             return (
               <Link
                 to={`/blog/${article.id}`}
@@ -17,7 +48,7 @@ function Home(props) {
                 }}
                 className="link"
                 key={article.id}
-                data={articles}
+                // data={articles}
               >
                 <div className="blog-list">
                   <div className="blog-preview">
@@ -42,59 +73,34 @@ function Home(props) {
           <div className="tags">
             <h4>Tags</h4>
 
-            <div
-              className="tag-group"
-              role="group"
-              aria-label="Basic checkbox toggle button group"
-            >
-              <input
-                type="checkbox"
-                className="btn-check"
-                id="btncheck1"
-                autoComplete="off"
-              />
-              <label className="btn btn-outline-primary" htmlFor="btncheck1">
-                Checkbox 1
-              </label>
+            <ul className="">
+              <li className="tag">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (data.length !== articleslist.length) {
+                      setArticleslist(data);
+                    }
+                  }}
+                  className="tag-button"
+                >
+                  All
+                </button>
+              </li>
 
-              <input
-                type="checkbox"
-                className="btn-check"
-                id="btncheck2"
-                autoComplete="off"
-              />
-              <label className="btn btn-outline-primary" htmlFor="btncheck2">
-                Checkbox 2
-              </label>
-
-              <input
-                type="checkbox"
-                className="btn-check"
-                id="btncheck3"
-                autoComplete="off"
-              />
-              <label className="btn btn-outline-primary" htmlFor="btncheck3">
-                Checkbox 3
-              </label>
-              <input
-                type="checkbox"
-                className="btn-check"
-                id="btncheck4"
-                autoComplete="off"
-              />
-              <label className="btn btn-outline-primary" htmlFor="btncheck4">
-                Checkbox 4
-              </label>
-              <input
-                type="checkbox"
-                className="btn-check"
-                id="btncheck5"
-                autoComplete="off"
-              />
-              <label className="btn btn-outline-primary" htmlFor="btncheck5">
-                Checkbox 5
-              </label>
-            </div>
+              {tagslist.map((tag, index) => {
+                return (
+                  <li key={index} className="tag">
+                    <button
+                      className="tag-button"
+                      onClick={() => filtering(tag)}
+                    >
+                      {tag}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
           <div className="updates">
             <h4>Recent updates</h4>

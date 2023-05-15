@@ -5,7 +5,8 @@ function Blogdetails(props) {
   const articles = props.articles;
 
   const { id } = useParams();
-
+  console.log(id - 1);
+  console.log(articles);
   console.log(articles[id - 1]);
 
   return (
