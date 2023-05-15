@@ -13,7 +13,7 @@ function Navbar() {
         <div className="nav-container">
           <NavLink to="/" className="nav-logo">
             Blogger
-            <i className="fas fa-code"></i>
+            <i className="far fa-edit"></i>
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>

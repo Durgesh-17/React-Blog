@@ -27,6 +27,10 @@
     text-decoration: none;
     font-size: 2rem;
     flex-grow: 1;
+    padding-bottom: 15px;
+  }
+  .far{
+    margin-left: 8px;
   }
   
   .nav-menu {
