@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -12,8 +13,9 @@ function Footer() {
           </h3>
 
           <p className="footer-links">
-            <a href="#">Home </a>|<a href="#">startups </a>|
-            <a href="#">Entrepreneurship</a>
+            <Link to={"/React-Blog/"}>Home </Link>|
+            <Link to={"/React-Blog/startups"}>startups </Link>|
+            <Link to={"React-Blog/entrepreneurship"}>Entrepreneurship</Link>
           </p>
 
           <p className="footer-company-name">
@@ -37,7 +39,7 @@ function Footer() {
           <div>
             <i className="fa fa-envelope"></i>
             <p>
-              <a href="mailto:sagar00001.co@gmail.com">xyz@gmail.com</a>
+              <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
             </p>
           </div>
         </div>
